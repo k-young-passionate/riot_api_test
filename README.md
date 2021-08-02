@@ -1,5 +1,5 @@
 # 설치 및 사용 방법
-1. python3 설치
+1. [git](https://git-scm.com/downloads) 및 [python3](https://www.python.org/downloads/) 설치
 1. 이 project clone 및 directory 접근
     ```bash
     git clone https://github.com/k-young-passionate/riot_api_test.git
