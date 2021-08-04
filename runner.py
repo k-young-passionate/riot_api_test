@@ -27,7 +27,6 @@ def game_status(summoner_id):
     url = RIOT_API_BASE + BY_SUMMONER
     res = requests.get(url.format(summoner_id=summoner_id), headers=headers)
     res = json.loads(res.text)
-
     game_length = res["gameLength"]
     game_start_time = res["gameStartTime"] / 1000.0
     game_start_time_human_readable = datetime.datetime.fromtimestamp(game_start_time).strftime('%Y-%m-%d %H:%M:%S')
@@ -58,7 +57,5 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("user_name")
     args = parser.parse_known_args()
-    start_time = 1627912367163 / 1000.0
-    start = datetime.datetime.fromtimestamp(start_time).strftime('%Y-%m-%d %H:%M:%S')
 
     main(args[0])
