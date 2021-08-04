@@ -3,10 +3,8 @@ import requests
 import argparse
 import datetime
 
-from config import API_KEY, RIOT_API_BASE
+from config import API_KEY, RIOT_API_BASE, SUMMONER_NAME, BY_SUMMONER
 
-SUMMONER_NAME = "/lol/summoner/v4/summoners/by-name/{summoner_name}"
-BY_SUMMONER = "/lol/spectator/v4/active-games/by-summoner/{summoner_id}"
 
 headers = {
     "X-Riot-Token": API_KEY,
